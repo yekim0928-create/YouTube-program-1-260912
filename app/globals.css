@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ease-editorial: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fdf5f3;
+  background-image:
+    radial-gradient(circle at 10% 0%, rgba(239, 173, 158, 0.18), transparent 45%),
+    radial-gradient(circle at 90% 10%, rgba(212, 96, 61, 0.1), transparent 40%);
+  background-attachment: fixed;
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  height: 6px;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background-color: rgba(184, 74, 44, 0.3);
+  border-radius: 999px;
+}
